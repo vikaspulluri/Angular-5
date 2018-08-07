@@ -1,0 +1,13 @@
+<!-- <button 
+	class="btn btn-primary"
+	(click)="isMsgVisible = !isMsgVisible">Dislay Details</button> -->
+	<button 
+	class="btn btn-primary"
+	(click)="toggleDisplay()">Dislay Details</button>
+<p [ngStyle]="{'display': isMsgVisible === true ? 'block' : 'none'}">Secret Password = tuna</p>
+<ul>
+	<li *ngFor="let log of logs"
+		[ngStyle]="{backgroundColor: log >= 5 ? 'blue' : 'transparent'}"
+		[ngClass]="{'white-text': log >= 5}"
+		>{{log}}</li>
+</ul>
