@@ -1,0 +1,10 @@
+<h3>Active Users:</h3>
+<ul class="list-group">
+    <li
+    *ngFor="let user of users;let i = index">
+      <span *ngIf="user.status === 'Active'">
+          {{ user.name }}<a (click)="setToInactive(i)">|Set to Active</a>
+      </span>
+    </li>
+</ul>
+

@@ -13,6 +13,10 @@ import { AssignmentFourComponent } from './assignment-four/assignment-four.compo
 import { GameControlComponent } from './assignment-four/game-control/game-control.component';
 import { OddComponent } from './assignment-four/odd/odd.component';
 import { EvenComponent } from './assignment-four/even/even.component';
+import { AssignmentFiveComponent } from './assignment-five/assignment-five.component';
+import { UsersService } from './assignment-five/users.service';
+import { ActiveUsersComponent } from './assignment-five/active-users/active-users.component';
+import { InactiveUsersComponent } from './assignment-five/inactive-users/inactive-users.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,10 @@ import { EvenComponent } from './assignment-four/even/even.component';
     AssignmentFourComponent,
     GameControlComponent,
     OddComponent,
-    EvenComponent
+    EvenComponent,
+    AssignmentFiveComponent,
+    ActiveUsersComponent,
+    InactiveUsersComponent
   ],
   imports: [
     BrowserModule,
